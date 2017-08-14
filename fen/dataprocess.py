@@ -13,4 +13,4 @@ for file in files:
     temp_df.columns = dfcols
     df = pd.concat([df,temp_df],ignore_index=True)
 
-df.to_csv('processed_data.csv')
+df.to_csv('processed_data.csv',index=False)
